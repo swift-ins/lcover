@@ -211,7 +211,7 @@
             }
         }
 
-        /* ===== ВНУТРЕННЯЯ ЧАСТЬ ===== */
+        /* ===== ВНУТРЕННЯЯ ЧАСТЬ (ужато) ===== */
         .inner-flowers {
             font-size: 18px;
             letter-spacing: 6px;
@@ -315,8 +315,8 @@
             flex-shrink: 0;
         }
 
-        /* ===== АДАПТИВНОСТЬ: вертикальная ориентация (портрет) ===== */
-        @media (max-width: 550px) and (orientation: portrait) {
+        /* ===== АДАПТИВНОСТЬ ===== */
+        @media (max-width: 550px) {
             .card {
                 height: 520px;
             }
@@ -367,7 +367,7 @@
             }
         }
 
-        @media (max-width: 400px) and (orientation: portrait) {
+        @media (max-width: 400px) {
             .card {
                 height: 480px;
             }
@@ -390,127 +390,6 @@
             }
             .cover-main {
                 font-size: 24px;
-            }
-        }
-
-        /* ===== ДОПОЛНИТЕЛЬНО: горизонтальная ориентация (ландшафт) на телефонах ===== */
-        @media (max-height: 500px) and (orientation: landscape) {
-            body {
-                padding: 5px;
-            }
-
-            .card {
-                height: 85vh;
-                max-height: 460px;
-            }
-
-            .card-front,
-            .card-back {
-                padding: 12px 20px;
-            }
-
-            /* Обложка */
-            .cover-title {
-                font-size: 16px;
-                letter-spacing: 3px;
-                margin-bottom: 6px;
-            }
-            .cover-main {
-                font-size: 28px;
-                letter-spacing: 4px;
-            }
-            .cover-flowers {
-                font-size: 20px;
-                letter-spacing: 8px;
-                margin-bottom: 4px;
-            }
-            .open-hint {
-                font-size: 11px;
-                margin-top: 10px;
-            }
-            .cover-corner {
-                display: none;
-            }
-            .cover-border {
-                display: none;
-            }
-
-            /* Внутренняя часть */
-            .inner-flowers {
-                font-size: 14px;
-                letter-spacing: 4px;
-                margin-bottom: 2px;
-            }
-            .inner-salutation {
-                font-size: 16px;
-                letter-spacing: 1px;
-                margin-bottom: 2px;
-            }
-            .inner-main {
-                font-size: 14px;
-                margin: 1px 0 2px 0;
-            }
-            .inner-divider {
-                width: 35px;
-                margin: 2px auto 3px auto;
-            }
-            .inner-wish {
-                font-size: 11px;
-                line-height: 1.3;
-            }
-            .inner-wish p {
-                margin: 0 0 2px 0;
-            }
-            .inner-wish .guess {
-                font-size: 12px;
-                margin: 3px 0 0 0;
-            }
-            .inner-signature-line {
-                width: 25px;
-                margin: 3px auto 2px auto;
-            }
-            .inner-signature {
-                font-size: 14px;
-            }
-            .inner-stars {
-                font-size: 8px;
-                letter-spacing: 4px;
-                margin-top: 2px;
-            }
-        }
-
-        /* Для очень маленьких экранов в ландшафте */
-        @media (max-height: 400px) and (orientation: landscape) {
-            .card {
-                height: 90vh;
-                max-height: 380px;
-            }
-
-            .inner-wish {
-                font-size: 9.5px;
-                line-height: 1.25;
-            }
-            .inner-wish .guess {
-                font-size: 10px;
-            }
-            .inner-main {
-                font-size: 12px;
-            }
-            .inner-salutation {
-                font-size: 13px;
-            }
-            .inner-signature {
-                font-size: 12px;
-            }
-            .cover-main {
-                font-size: 22px;
-            }
-            .cover-title {
-                font-size: 13px;
-            }
-            .card-front,
-            .card-back {
-                padding: 8px 14px;
             }
         }
     </style>
@@ -540,7 +419,7 @@
                 </div>
             </div>
 
-            <!-- ===== ВНУТРЕННЯЯ СТОРОНА ===== -->
+            <!-- ===== ВНУТРЕННЯЯ СТОРОНА (ужато) ===== -->
             <div class="card-back">
                 <div class="inner-flowers">✿ ✿ ✿ ✿ ✿</div>
                 <div class="inner-salutation">Дорогая Инна,</div>
